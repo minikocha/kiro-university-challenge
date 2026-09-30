@@ -3,7 +3,6 @@
 ## セットアップ
 
 ```bash
-cd object-remover
 go mod download
 ```
 

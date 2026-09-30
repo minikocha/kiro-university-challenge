@@ -30,7 +30,7 @@ object-remover --bucket <bucket> --prefix <prefix> [--region <region>] [--yes] [
 ### Project Structure
 
 ```
-object-remover/
+kiro-university-challenge/   ← リポジトリルート
 ├── cmd/
 │   └── object-remover/
 │       └── main.go       # エントリーポイント・フラグ解析・全体フロー
@@ -40,7 +40,7 @@ object-remover/
 └── go.sum
 ```
 
-- モジュールパス: `github.com/minikocha/kiro-university-challenge/object-remover`
+- モジュールパス: `github.com/minikocha/kiro-university-challenge`
 - パッケージ構成:
   - `remover.go` → `package remover`
   - `cmd/object-remover/main.go` → `package main`、`remover` パッケージをインポート

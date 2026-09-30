@@ -9,6 +9,8 @@
 
 ## パッケージ構成
 
+- `go.mod` はリポジトリルート（`kiro-university-challenge/`）に置く
+- モジュールパスは `github.com/minikocha/kiro-university-challenge`
 - `remover.go` のパッケージ名は `remover`
 - `cmd/object-remover/main.go` のパッケージ名は `main`
 - `main.go` はフラグ解析・全体フロー制御のみを担い、S3操作のロジックは `remover` パッケージに置く
