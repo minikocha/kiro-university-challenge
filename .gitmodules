@@ -1,0 +1,3 @@
+[submodule ".kiro/powers/object-remover/cc-skills-golang"]
+	path = .kiro/powers/object-remover/cc-skills-golang
+	url = https://github.com/samber/cc-skills-golang
