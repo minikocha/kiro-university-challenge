@@ -147,3 +147,8 @@ type Remover struct {
 
 - `--region` フラグが指定されている場合、そのリージョンを使用する
 - `--region` フラグが未指定の場合、`AWS_REGION` 環境変数または `~/.aws/config` の設定を参照する（AWS SDK v2のデフォルト動作に委ねる）
+
+### REQ-007: シグナルハンドリング
+
+- `signal.NotifyContext()` を使用して `SIGINT`（Ctrl+C）受信時にcontextをキャンセルする
+- contextのキャンセルにより、進行中のS3 APIコール（バケット存在確認・オブジェクト列挙・削除）を速やかに中断する
