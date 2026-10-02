@@ -1,0 +1,19 @@
+{
+  "name": "develop",
+  "description": "agent for development of object-remover",
+  "tools": ["read", "write", "shell"],
+  "includeMcpJson": false,
+  "includePowers": true,
+  "resources": [
+    "file://./.kiro/specs/object-remover/requirements.md",
+    "file://./.kiro/steering/coding-conventions.md",
+    "file://./.kiro/steering/development.md"
+  ],
+  "permissions": {
+    "rules": [
+      { "capability": "shell", "match": ["go fmt *", "go build *", "go test *", "git status", "git diff *", "git add *", "git commit *"], "effect": "allow" }
+    ]
+  },
+  "prompt": "You are a helpful coding assistant",
+  "welcomeMessage": "Ready to help. What are you working on?"
+}
