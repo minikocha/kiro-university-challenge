@@ -1,0 +1,11 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "go-fmt",
+      "trigger": "PostFileSave",
+      "matcher": "\\.go$",
+      "action": { "type": "command", "command": "go fmt ./..." }
+    }
+  ]
+}
